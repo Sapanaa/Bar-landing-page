@@ -1,25 +1,9 @@
 import React from 'react'
 import { cocktailLists, mockTailLists } from '../../constants'
-import { useGSAP } from '@gsap/react'
-import { gsap } from 'gsap'
+
 
 const Cocktails = () => {
-    useGSAP(() => {
-        const parallexTimeline = gsap.timeline({
-            scrollTrigger: {
-                trigger: "#cocktails",
-                scrub: true,
-                pin: true,
-                start: "top 30%",
-                end: "bottom 80%",
-                
-            }
-        })
-
-        parallexTimeline.fromTo('#c-left-leaf', { xPercent: -30 }, { xPercent: 30 })
-        parallexTimeline.fromTo('#c-right-leaf', { xPercent: 30 }, { xPercent: -30 })
-    })
-
+    
 
   return (
     <div id = 'cocktails' className='noisy'>
