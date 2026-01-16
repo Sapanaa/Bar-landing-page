@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+
+@font-face {
+  font-family: "fair";
+  src: url("/fonts/Playfair-Display.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "fair3";
+  src: url("/fonts/Playfair-Display.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "fair2";
+  src: url("/fonts/ItalicPlayfair.ttf");
+}
+
+@theme {
+  --font-fair: "fair";
+  --font-fair2: "fair2";
+  --font-fair3: "fair3";
+  
+}
+
+html,
+body {
+    width: 100%;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
